@@ -6,7 +6,6 @@
 
 class Player (val name: String) {
     var currentSquare = 0
-
 }
 
 class Players (val players: Array<Player>) {
@@ -15,7 +14,5 @@ class Players (val players: Array<Player>) {
     fun nextPlayer() {
         current = if (current == players.lastIndex) 0 else ++current
     }
-
-
 }
 

@@ -2,13 +2,13 @@
 //board size passed in
 //board size = $winningSquare
 
-
 class Board(val boardSize: Int) {
-    val board = mutableListOf<Int>()
+    val boardNumbers = mutableListOf<Int>()
+
     fun populateBoard() {
         val boardRange = 1..boardSize
         for (i in boardRange) {
-            board.add(i)
+            boardNumbers.add(i)
         }
     }
 
