@@ -1,8 +1,9 @@
-class Board(val boardSize: Int) {
-    //number container
-    //board size passed in
-    //board size = $winningSquare
+//number container
+//board size passed in
+//board size = $winningSquare
 
+
+class Board(val boardSize: Int) {
     val board = mutableListOf<Int>()
     fun populateBoard() {
         val boardRange = 1..boardSize

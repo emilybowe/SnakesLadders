@@ -1,11 +1,13 @@
-class Player (val name: String)
-    //array of players
-    //$name of player
-    //$currentSquare of player initialised to 0
-    //$currentPlayer
+//array of players
+//$name of player
+//$currentSquare of player initialised to 0
+//$currentPlayer
+//$currentSquare is updated with %diceRoll%
 
-    val currentSquare = 0
+class Player (val name: String) {
+    var currentSquare = 0
 
+}
 
 class Players (val players: Array<Player>) {
     private var current = 0
@@ -13,5 +15,7 @@ class Players (val players: Array<Player>) {
     fun nextPlayer() {
         current = if (current == players.lastIndex) 0 else ++current
     }
+
+
 }
 
