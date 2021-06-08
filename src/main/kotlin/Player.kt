@@ -3,4 +3,7 @@ class Player {
     //$name of player
     //$currentSquare of player initialised to 0
     //$currentPlayer
+
+
+
 }
