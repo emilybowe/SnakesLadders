@@ -1,8 +1,10 @@
-fun main(args: Array<String>) {
+fun main() {
 
     val board = Board(100)
+    board.populateBoard()
     val game = Game(board)
     val snakesAndLadders = SnakesAndLadders(64, 54, 70, 80)
+    snakesAndLadders.addToSnakeLadderPool()
     val players = Players(
         arrayOf(
             Player("A"),
@@ -14,6 +16,7 @@ fun main(args: Array<String>) {
             nextPlayer()
             val turn = Turn(Dice(6))
             turn.move(currentPlayer())
+
             snakesAndLadders.updateCurrentSquareWithSnakeLadderIfFound(currentPlayer())
 
             if (game.hasWinner(currentPlayer())) {

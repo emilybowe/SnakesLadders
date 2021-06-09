@@ -2,7 +2,7 @@
 //if $currentSquare matches as a key in $SnakeLadderPool
 //the returned value is the new $currentSquare
 
-class Turn (var number: Number) {
+class Turn(private val number: Number) {
     val diceRoll = number.generate()
 
     fun move(player: Player) {

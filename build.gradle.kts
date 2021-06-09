@@ -1,3 +1,4 @@
+import jdk.nashorn.internal.objects.NativeRegExp.test
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {

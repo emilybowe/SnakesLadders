@@ -2,8 +2,9 @@ class SnakesAndLadders (val snakeStart: Int, val snakeEnd: Int, val ladderStart:
     //construct snakes and ladders
     //could randomise with pools: - low pool bottom 30% of board size and high pool top 30 % of board size
     //could randomise with manual seeds and add/decrement 5-10 cells
-    //could be passed in randomly
+    //could be passed in randomly, pass in how many snakes/ladders to create
     //**could separate out into SnakeFactory: Factory and LadderFactory:Factory
+
 
     private val snakeLadderPool = mutableMapOf<Int, Int>()
     fun addToSnakeLadderPool() {
